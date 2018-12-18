@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Puzzle</title>
+<link href='puzzle.css' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="image/emb.png" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css?family=Roboto Slab" rel="stylesheet">
+</head>
+<body>
+     
+<header class="navbar responsive" id="mynavbar"> 
+    <ul>
+        <li>
+            <a href="#" class="icon" id="menu">&#9776;</a>
+            <a href="#game">Игра</a>
+        </li>
+        <li class="menu, right">
+            <nav>
+               
+                <a href="#menu" class="menubtn">Меню</a>
+                <a class="menu_content" href="#screens">Скрины</a>
+                <a class="menu_content" href="#rules">Правила</a>
+                <a class="menu_content" href="#author">Автор</a>
+            </nav>
+        </li>
+    </ul>
+</header>
+
+<main>
+<h1>Puzzle</h1>
+
+    <div class="gameim">                                  
+        <img class="gamefon" src="avat.jpg" width="100%" height="400">
+    </div>
+<a name="game"></a>
+<div class="game_all">
+  <div id="title">
+    <h1>Игра</h1>
+  </div>
+  <div id="slider">
+    <form>
+      <label>Легко</label>
+      <input type="range" id="scale" value="3" min="3" max="5" step="1">
+      <label>Сложно</label>
+    </form> 
+  </div>
+  <br>
+  <div id="main" class="main">
+    <canvas id="puzzle" width="480px" height="480px"></canvas>
+  </div >
+<span id="timer"></span>
+<br/>
+<a href="puzzle.html">
+    <input type="button" value="Новая игра" />
+</a>
+<input type="button"  onclick="start_timer()" value="Старт" />
+</div>
+
+
+
+    
+
+    <a name="screens"></a> 
+    <h1>Скрины</h1> 
+    <div class="all_screens">
+        <div class="photo">                                                                                       
+            <img  src="puz.png" width="400" height="400">                                        
+        </div> 
+            
+        <div class="photo">                                  
+            <img  src="puz1.png" width="400" height="400">                                       
+        </div>
+                
+        <div class="photo">                                  
+            <img  src="puz2.png" width="400" height="400">                                       
+        </div>
+    </div>
+
+    <a name="rules"></a>   
+    
+    <h1>Правила</h1>
+    <p class="rul">Нужно путем передвижения фрагментов картинки, сложить картинку</p>
+    <div class="a2ll_rules">
+
+        <div class="all_rules">
+            
+            
+            <div class="_rules">  
+                <p>Так выглядит не собранный пазл.</p>                                                                                     
+                <img  id = "img" src="puz2.png"  width="350" height="400">                                        
+            </div> 
+
+            <div class="_rules">
+                <p>Так выглядит собранный пазл.</p>                                                                                       
+                <img  id = "img" src="puz3.png"  width="350" height="400">                                        
+            </div> 
+                   
+        </div>
+
+    </div>
+
+
+    <a name="author"></a> 
+    <h1>Автор</h1> 
+    <div class="about">
+        <div class="me">                                                                                       
+            <img  src="avtor.jpg" width="220" height="220">                                        
+        </div> 
+            
+        <div class="info">                                  
+            <p class="info1">Трофимов Алексей</p>
+            <p class="info1">4 курс, БрГТУ</p>
+            <p class="info1">Автор</p>                                    
+        </div>
+    </div>
+
+</main>
+
+<footer>               
+    <div class="links">   
+        <p>Курсовой проект по ЛКС. Мои контакты:               
+        <a href=https://github.com/Trofimow/lb2 target="_blank">github</a>
+        и
+        leha2045854@gmail.com</p>
+    </div>
+</footer>
+
+<script src="timer.js"></script>
+<script src="puzzle.js"></script>
+</body>
+</html>

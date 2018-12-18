@@ -1,0 +1,199 @@
+body {
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: 'Roboto Slab', cursive ;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+label, span{
+	font-family: 'Roboto Slab', cursive ;
+    text-align: center;
+    color: white;
+}
+
+input{
+	font-family: 'Roboto Slab', cursive ;
+    text-align: center;
+    color: black;
+}
+
+/*navbar*/
+
+ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    font-family: 'Roboto Slab', serif ;
+    font-size: 20px;
+}
+
+li {
+    float: left;
+}
+
+li a, .menubtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .menu .menubtn {
+    background-color: blue;
+}
+
+li.right {
+    float: right;
+}
+
+li.menu {
+    display: block;
+}
+
+.navbar .icon{
+    display: none;
+}
+
+
+@media screen and (max-width: 600px){
+
+     /*navbar*/
+
+    li {
+        float: none;
+    }
+
+    li.right {
+        float: none;
+    }
+
+    li a, .menubtn {
+        display: block;
+    }
+
+    li .menu_content{
+        display: none;
+    }
+    
+    li:hover  .menu_content{
+        display: block;
+        
+    }
+
+    /* Screens */
+
+    .all_screens{                    
+        flex-direction: column;
+        margin: auto;
+    }
+    .all_screens .photo img{
+        width: 100%;
+    }
+
+    /* About */ 
+    .about{
+        flex-direction: column;
+        margin: auto;
+    }
+
+    /* Rules */ 
+    .all_rules, .a2ll_rules{                    
+        flex-direction: column;
+        margin: auto;
+    }
+
+}
+
+
+.gameim{
+    text-align: center;
+       
+}
+
+.game_all{
+	width: 100%;
+    text-align: center;
+  
+}
+
+
+ /* Screens */ 
+ 
+.all_screens{
+    width: 100%;
+    margin: 30px auto;
+    overflow: hidden;
+    display: flex;
+}
+
+.all_screens .photo{
+    margin: 1% 1% 5% 2%; 
+}
+
+
+
+
+/* Rules */ 
+ 
+.all_rules{
+    overflow: hidden;
+    display: flex;
+}
+
+.a2ll_rules {
+    width: 100%;
+    margin: auto;
+    display: center;
+}
+
+._rules{
+    margin: 1% 1% 5% 2%; 
+}
+
+p{
+    font-family: 'Roboto Slab', cursive ;
+    font-size: 30px;
+    text-align: left;
+    color: white;
+}
+
+.rul{
+    text-align: center;
+}
+
+#img{
+    text-align: center;
+}
+
+/* About */ 
+
+.info  {
+    font-family: 'Roboto Slab', cursive ;
+    font-size: 30px;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+}
+.about{
+    width: 100%;
+    margin: 30px auto;
+    overflow: hidden;
+    display: flex;
+}
+
+.about .me, .info{
+    margin: 1% 5% 5% 5%; 
+}
+
+/* Links */ 
+.links{
+    text-align: center;
+}
